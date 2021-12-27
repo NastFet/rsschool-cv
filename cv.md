@@ -1,4 +1,4 @@
-![my fhoto](my.JPG)
+![my fhoto](me.JPG)
 # Anastasiya Fiatsistava
 ## Republic of Belarus
 _ _  __
