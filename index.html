@@ -17,12 +17,12 @@
       <nav>
         <div class="container">
           <ul class="menu">
-            <li class="menu-item"><a class="menu-link" href="#">About me</a></li>
-            <li class="menu-item"><a class="menu-link" href="#">Contacts</a></li>
-            <li class="menu-item"><a class="menu-link" href="#">Basic skills</a></li>
-            <li class="menu-item"><a class="menu-link" href="#">Code</a></li>
-            <li class="menu-item"><a class="menu-link" href="#">Education</a></li>
-            <li class="menu-item"><a class="menu-link" href="#">English level</a></li>
+            <li class="menu-item"><a class="menu-link" href="#about">About me</a></li>
+            <li class="menu-item"><a class="menu-link" href="#contacts">Contacts</a></li>
+            <li class="menu-item"><a class="menu-link" href="#skills">Basic skills</a></li>
+            <li class="menu-item"><a class="menu-link" href="#code">Code</a></li>
+            <li class="menu-item"><a class="menu-link" href="#education">Education</a></li>
+            <li class="menu-item"><a class="menu-link" href="#english">English level</a></li>
           </ul>
         </div>
       </nav>
@@ -37,7 +37,7 @@
             <div class="photo">
               <img src="img/my.png" alt="my photo" width="350px" height="350px">
             </div>
-            <div class="contacts" id="contakts" >
+            <div class="contacts" id="contacts" >
               <h2>Contacts</h2>
               <div class="divider"></div>
               <ul class="contacts-ul">
@@ -89,52 +89,65 @@
 
           <div class="right-part">
 
-            <div class="about">
+            <div class="about" id="about">
               <h2>About me</h2>
               <div class="divider"></div>
-              <p class="descr">/lkh/oug.iyf,txcdmhothoiaeuubk,;d']ppjjhbnvbnvl;alljkjuue jhywppivnsnhgrg;aowgjkfnvh?SDLGj</p>
+              <p class="descr">My name's Anastasiya. I'm from Belarus. I'm 34 years. I started to study HTML, CSS, JS 6 months ago. I want to learn to code and become a full-stack web developer.</p>
             </div>
 
-            <div class="education">
+            <div class="education" id="education">
               <h2>Education</h2>
               <div class="divider"></div>
-              <pclass="descr">Belarus state economic university</pclass=>
+              <p class="descr">Belarus state economic university</p>
+              <p class="descr">Cources on Udemy: Web Development, JavaScreapt + React</p>
             </div>
 
-            <div class="code">
+            <div class="code" id="code">
               <h2>Code examples</h2>
               <div class="divider"></div>
-              <pre>
-                <code>
-                  const hamburger = document.querySelector('.hamburger'),
-                        menu = document.querySelector('.menu'),
-                        close = document.querySelector('.menu__close');
-  
-                  hamburger.addEventListener('click', () => {
-                      menu.classList.add('active');
-                  });   
-                  close.addEventListener('click', () => {
-                      menu.classList.remove('active');
-                  });
-  
-                  const percent = document.querySelectorAll('.skills__ratings-percent'),
-                      lines = document.querySelectorAll('.skills__ratings-part');
-                  percent.forEach((item, i) => {
-                      lines[i].style.width = item.innerHTML
-                  });
-                </code>
-              </pre>
+              <div class="code-example">
+                <pre>
+                  <code data-language="javascript" class="code-js">
+                    const hamburger = document.querySelector('.hamburger'),
+                          menu = document.querySelector('.menu'),
+                          close = document.querySelector('.menu__close');
+    
+                    hamburger.addEventListener('click', () => {
+                        menu.classList.add('active');
+                    });   
+                    close.addEventListener('click', () => {
+                        menu.classList.remove('active');
+                    });
+    
+                    const percent = document.querySelectorAll('.skills__ratings-percent'),
+                        lines = document.querySelectorAll('.skills__ratings-part');
+                    percent.forEach((item, i) => {
+                        lines[i].style.width = item.innerHTML
+                    });
+                  </code>
+                </pre>
+              </div>
+              
               
             </div>
 
             <div class="projects">
               <h2>My projects</h2>
               <div class="divider"></div>
+              <ul class="projects-item">
+                <li>
+                  <a href="#"><img src="img/project/pulse.jpg" alt="my first project"></a>
+                </li>
+                <li>
+                  <a href="#"><img src="img/project/uber.jpg" alt="my second project"></a>
+                </li>
+              </ul>
             </div>
 
-            <div class="english">
+            <div class="english" id="english">
               <h2>English level</h2>
               <div class="divider"></div>
+              <p class="descr">Pre-intermediate</p>
             </div>
           </div>
         </div>
