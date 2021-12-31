@@ -58,44 +58,84 @@
             <div class="skills" id="skills">
               <h2>Basic skills</h2>
               <div class="divider"></div>
-              <div class="skills-ratings">
-                <div class="skills-ratings-head">
-                    <h4 class="skills-ratings-title">HTML</h4>
-                    <div class="skills-ratings-percent">70%</div>
-                </div>
-                <div class="skills-ratings-scale">
-                    <div class="skills-ratings-all">
-                        <div style="width: 70%" class="skills-ratings-part"></div>
-                    </div>
-                </div>
-              </div>
-              <div class="skills-ratings">
-                <div class="skills-ratings-head">
-                    <h4 class="skills-ratings-title">CSS</h4>
-                    <div class="skills-ratings-percent">65%</div>
-                </div>
-                <div class="skills-ratings-scale">
-                    <div class="skills-ratings-all">
-                        <div style="width: 65%" class="skills-ratings-part"></div>
-                    </div>
-                </div>
-              </div>
-              <div class="skills-ratings">
-                <div class="skills-ratings-head">
-                    <h4 class="skills-ratings-title">GIT</h4>
-                    <div class="skills-ratings-percent">55%</div>
-                </div>
-                <div class="skills-ratings-scale">
-                    <div class="skills-ratings-all">
-                        <div style="width: 55%" class="skills-ratings-part"></div>
-                    </div>
-                </div>
-              </div>
+              <ul class="skills-list">
+                <li class="skills-item">
+                  <div class="skills-item-wrapper">
+                    <img src="img/skills/html5.png" alt="HTML5">
+                    <h4>HTML5</h4>
+                  </div>
+                </li>
+                <li class="skills-item">
+                  <div class="skills-item-wrapper">
+                    <img src="img/skills/css3.png" alt="CSS">
+                    <h4>CSS</h4>
+                  </div>
+                </li>
+                <li class="skills-item">
+                  <div class="skills-item-wrapper">
+                    <img src="img/skills/JS.png" alt="JS">
+                    <h4>JS basic</h4>
+                  </div>
+                </li>
+                <li class="skills-item">
+                  <div class="skills-item-wrapper">
+                    <img src="img/skills/Git.png" alt="Git">
+                    <h4>Git</h4>
+                  </div>
+                </li>
+              </ul>
             </div>
           </div>
 
           <div class="right-part">
-            Second PART
+
+            <div class="about">
+              <h2>About me</h2>
+              <div class="divider"></div>
+              <p class="descr">/lkh/oug.iyf,txcdmhothoiaeuubk,;d']ppjjhbnvbnvl;alljkjuue jhywppivnsnhgrg;aowgjkfnvh?SDLGj</p>
+            </div>
+
+            <div class="education">
+              <h2>Education</h2>
+              <div class="divider"></div>
+              <pclass="descr">Belarus state economic university</pclass=>
+            </div>
+
+            <div class="code">
+              <h2>Code examples</h2>
+              <div class="divider"></div>
+              <pre>
+                <code>
+                  const hamburger = document.querySelector('.hamburger'),
+                        menu = document.querySelector('.menu'),
+                        close = document.querySelector('.menu__close');
+  
+                  hamburger.addEventListener('click', () => {
+                      menu.classList.add('active');
+                  });   
+                  close.addEventListener('click', () => {
+                      menu.classList.remove('active');
+                  });
+  
+                  const percent = document.querySelectorAll('.skills__ratings-percent'),
+                      lines = document.querySelectorAll('.skills__ratings-part');
+                  percent.forEach((item, i) => {
+                      lines[i].style.width = item.innerHTML
+                  });
+                </code>
+              </pre>
+              
+            </div>
+
+            <div class="projects">
+              <h2>My projects</h2>
+              <div class="divider"></div>
+            </div>
+
+            <div class="english">
+              <h2>English level</h2>
+              <div class="divider"></div>
+            </div>
           </div>
         </div>
       </div>
@@ -103,10 +143,21 @@
 
     <footer>
       <div class="container">
-        <div class="logo">
-          <a href="https://rs.school/js/">123</a>
+        <div class="footer-wrapper">
+          <div>
+            <a href="https://github.com/NastFet">
+              <img src="img/skills/github.png" alt="GitHub">
+            </a>
+          </div>
+          <div>2021</div>
+          <div>
+            <a href="https://rs.school/js/">
+              <img src="img/rs_school_js.png" alt="The Rolling Scopes">
+            </a>
+          </div>
         </div>
       </div>
+      
     </footer>
 </body>
 </html>

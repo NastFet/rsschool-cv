@@ -109,5 +109,43 @@ h2 {
 
 .contact-link {
     text-decoration: none;
-    color: fcfcfc;
+    color: #fcfcfc;
+}
+
+.skills-list {
+    margin-top: 20px;
+    padding-left: 45px;
+    list-style-type: none;
+}
+
+.skills-item-wrapper {
+    margin-top: 18px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+h4 {
+    margin: auto 0;
+    color: #fcfcfc;
+    font-size: 22px;
+}
+
+
+
+
+
+footer {
+    min-height: 44px;
+    background-color: #7a6a65;
+}
+
+footer div {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
