@@ -1,0 +1,179 @@
+html{
+    font-family: 'Poppins', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    position: relative;
+    height: 70px;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    background-color: #7a6a65;
+}
+
+.menu {
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 70px;
+    margin: 0;
+    list-style-type: none;
+}
+
+.menu .menu-link {
+    font-size: 20px;
+    font-weight: 500;
+    color: #fcfcfc;
+}
+
+.wrapper {
+    min-height: 1000px;
+    display: grid;
+    grid-template-columns: 400px 740px;
+    column-gap: 0;
+}
+
+.left-part {
+    margin: 0 auto;
+    padding: 50px 0;
+    background-color: #21201f;
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    color: #fcfcfc;
+}
+
+h1 span {
+    color: #dbaea1;
+}
+
+.location {
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 25px;
+    text-align: center;
+    background-color: #dbaea1;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-size: 25px;
+    color: #21201f
+
+}
+.photo {
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.contacts{
+    margin-top: 35px;
+}
+
+h2 {
+    text-align: center;
+    color: #dbaea1;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+.divider {
+    width: 350px;
+    height: 1px;
+    margin: 0 auto;
+    background-color: #dbaea1;
+
+}
+
+.contacts-ul {
+    padding: 25px;
+    list-style-type: none;
+    color: #fcfcfc;
+    line-height: 40px;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+.contact-link {
+    text-decoration: none;
+    color: #fcfcfc;
+}
+
+.skills-list {
+    margin-top: 20px;
+    padding-left: 45px;
+    list-style-type: none;
+}
+
+.skills-item-wrapper {
+    margin-top: 18px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+h4 {
+    margin: auto 0;
+    color: #fcfcfc;
+    font-size: 22px;
+}
+
+.right-part {
+    padding: 50px 30px;
+}
+
+.descr {
+    margin-top: 15px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.education, .code, .projects, .english {
+    margin-top: 50px;
+}
+
+.code-example {
+    margin-top: 15px;
+    background-color:#7a6a65;
+    
+}
+
+.code-js {
+    font-size: 12px;
+    color: #fcfcfc;
+}
+
+.projects-item {
+    margin-top: 15px;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+footer {
+    min-height: 44px;
+    background-color: #7a6a65;
+}
+
+footer div {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

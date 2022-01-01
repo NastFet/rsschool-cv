@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="img/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+      <nav>
+        <div class="container">
+          <ul class="menu">
+            <li class="menu-item"><a class="menu-link" href="#about">About me</a></li>
+            <li class="menu-item"><a class="menu-link" href="#contacts">Contacts</a></li>
+            <li class="menu-item"><a class="menu-link" href="#skills">Basic skills</a></li>
+            <li class="menu-item"><a class="menu-link" href="#code">Code</a></li>
+            <li class="menu-item"><a class="menu-link" href="#education">Education</a></li>
+            <li class="menu-item"><a class="menu-link" href="#english">English level</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="wrapper">
+          <div class="left-part">
+            <h1><span>Anastasiya</span> Fiatsistava</h1>
+            <div class="location">Republic of Belarus</div>
+            <div class="photo">
+              <img src="img/my.png" alt="my photo" width="350" height="350">
+            </div>
+            <div class="contacts" id="contacts" >
+              <h2>Contacts</h2>
+              <div class="divider"></div>
+              <ul class="contacts-ul">
+                <li class="contact-item">Phone number:
+                  <a class="contact-link" href="tel:+375295846235">+37529-58-462-35</a>
+                </li>
+                <li class="contact-item">Email address:
+                  <a class="contact-link" href="mailto:fetnastia@gmail.com">fetnastia@gmail.com</a>
+                </li>
+                <li class="contact-item">GitHub:
+                  <a class="contact-link" href="https://github.com/NastFet/rsschool-cv">https://github.com/NastFet</a>
+                </li>
+                <li class="contact-item">Discord:
+                  <a class="contact-link" href="#">Nastya_fet#2139</a>
+                </li>
+              </ul>
+            </div>
+            <div class="skills" id="skills">
+              <h2>Basic skills</h2>
+              <div class="divider"></div>
+              <ul class="skills-list">
+                <li class="skills-item">
+                  <div class="skills-item-wrapper">
+                    <img src="img/skills/html5.png" alt="HTML5">
+                    <h4>HTML5</h4>
+                  </div>
+                </li>
+                <li class="skills-item">
+                  <div class="skills-item-wrapper">
+                    <img src="img/skills/css3.png" alt="CSS">
+                    <h4>CSS</h4>
+                  </div>
+                </li>
+                <li class="skills-item">
+                  <div class="skills-item-wrapper">
+                    <img src="img/skills/JS.png" alt="JS">
+                    <h4>JS basic</h4>
+                  </div>
+                </li>
+                <li class="skills-item">
+                  <div class="skills-item-wrapper">
+                    <img src="img/skills/Git.png" alt="Git">
+                    <h4>Git</h4>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="right-part">
+
+            <div class="about" id="about">
+              <h2>About me</h2>
+              <div class="divider"></div>
+              <p class="descr">My name's Anastasiya. I'm from Belarus. I'm 34 years. I started to study HTML, CSS, JS 6 months ago. I want to learn to code and become a full-stack web developer.</p>
+            </div>
+
+            <div class="education" id="education">
+              <h2>Education</h2>
+              <div class="divider"></div>
+              <p class="descr">Belarus state economic university</p>
+              <p class="descr">Cources on Udemy: Web Development, JavaScreapt + React</p>
+            </div>
+
+            <div class="code" id="code">
+              <h2>Code examples</h2>
+              <div class="divider"></div>
+              <div class="code-example">
+                <pre>
+                  <code data-language="javascript" class="code-js">
+                    const hamburger = document.querySelector('.hamburger'),
+                          menu = document.querySelector('.menu'),
+                          close = document.querySelector('.menu__close');
+    
+                    hamburger.addEventListener('click', () => {
+                        menu.classList.add('active');
+                    });   
+                    close.addEventListener('click', () => {
+                        menu.classList.remove('active');
+                    });
+    
+                    const percent = document.querySelectorAll('.skills__ratings-percent'),
+                        lines = document.querySelectorAll('.skills__ratings-part');
+                    percent.forEach((item, i) => {
+                        lines[i].style.width = item.innerHTML
+                    });
+                  </code>
+                </pre>
+              </div>
+              
+              
+            </div>
+
+            <div class="projects">
+              <h2>My project</h2>
+              <div class="divider"></div>
+              <ul class="projects-item">
+                <li>
+                  <a href="https://nastfet.github.io/pulse-example/"><img src="img/project/pulse.jpg" alt="my first project"></a>
+                </li>
+                <!-- <li>
+                  <a href="https://nastfet.github.io/uber-example/"><img src="img/project/uber.jpg" alt="my second project"></a>
+                </li> -->
+              </ul>
+            </div>
+
+            <div class="english" id="english">
+              <h2>English level</h2>
+              <div class="divider"></div>
+              <p class="descr">Pre-intermediate</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-wrapper">
+          <div>
+            <a href="https://github.com/NastFet">
+              <img src="img/skills/github.png" alt="GitHub">
+            </a>
+          </div>
+          <div>2021</div>
+          <div>
+            <a href="https://rs.school/js/">
+              <img src="img/rs_school_js.png" alt="The Rolling Scopes">
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+</body>
+
+</html>
